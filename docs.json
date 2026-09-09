@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "palm",
+  "theme": "mint",
   "name": "Dorsen Developers",
   "colors": {
     "primary": "#2C87BF",
@@ -24,17 +24,27 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Telegram Support Channel",
+          "icon": "telegram",
+          "href": "https://t.me/dorsenlabs"
         }
       ]
-    }
+    },
+    "tabs": [
+      {
+        "tab": "Home",
+        "pages": [
+          "index",
+          "quickstart"
+        ]
+      },
+      {
+        "tab": "Dorsen Chain"
+      },
+      {
+        "tab": "Changelogs"
+      }
+    ]
   },
   "logo": {
     "light": "/images/dorsen-icon.jpeg",
@@ -44,8 +54,8 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://t.me/dorsenlabs",
+        "label": "Get help"
       }
     ],
     "primary": {
@@ -74,9 +84,12 @@
     }
   },
   "icons": {
-    "library": "lucide"
+    "library": "fontawesome"
   },
   "background": {
     "decoration": "windows"
+  },
+  "styling": {
+    "eyebrows": "section"
   }
 }
