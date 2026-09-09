@@ -1,13 +1,16 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "palm",
+  "name": "Dorsen Developers",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2C87BF",
+    "light": "#409BD3",
+    "dark": "#2C87BF"
   },
-  "favicon": "/favicon.svg",
+  "favicon": {
+    "light": "/images/dorsen-icon.jpeg",
+    "dark": "/images/dorsen-icon.jpeg"
+  },
   "navigation": {
     "pages": [
       {
@@ -34,8 +37,9 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/dorsen-icon.jpeg",
+    "dark": "/images/dorsen-icon.jpeg",
+    "href": "https://docs.dorsen.org"
   },
   "navbar": {
     "links": [
@@ -64,9 +68,15 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
+      "x": "https://x.com/dorsenofficial",
+      "github": "https://github.com/dorsen-labs",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "background": {
+    "decoration": "windows"
   }
 }
