@@ -1,0 +1,444 @@
+/* Dorsen Docs Custom Styles & Responsive Layout */
+
+.dorsen-page-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 80px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Hero */
+.dorsen-hero {
+  margin-bottom: 100px;
+}
+
+.dorsen-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, rgba(44,135,191,0.12) 0%, rgba(64,155,211,0.08) 100%);
+  border: 1px solid rgba(64,155,211,0.25);
+  color: #7ecbf5;
+}
+
+.dorsen-hero-title {
+  font-size: 64px;
+  line-height: 1.08;
+  letter-spacing: -1.6px;
+  font-weight: 600;
+  margin: 0;
+  background: linear-gradient(135deg, #e0f0ff 0%, #409BD3 40%, #7ecbf5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dorsen-hero-desc {
+  margin-top: 20px;
+  max-width: 620px;
+  font-size: 22px;
+  line-height: 1.45;
+  letter-spacing: -0.2px;
+  font-weight: 400;
+  color: #9ba8b9;
+}
+
+/* Product Cards 2-Col Grid */
+.dorsen-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 64px;
+  row-gap: 80px;
+  margin-bottom: 160px;
+}
+
+.dorsen-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 20px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.dorsen-card:hover {
+  background-color: rgba(64,155,211,0.05);
+}
+
+.dorsen-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 106px;
+  border-radius: 22px;
+  flex-shrink: 0;
+  background: linear-gradient(145deg, rgba(44,135,191,0.12) 0%, rgba(30,40,55,0.8) 100%);
+  border: 1px solid rgba(64,155,211,0.15);
+  font-size: 36px;
+}
+
+.dorsen-card-icon-blue {
+  background: linear-gradient(145deg, rgba(64,155,211,0.12) 0%, rgba(30,40,55,0.8) 100%);
+}
+
+.dorsen-card-title {
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+  font-weight: 600;
+  color: #f0f4f8;
+}
+
+.dorsen-card-desc {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-top: 8px;
+  max-width: 320px;
+  color: #8b9ab3;
+}
+
+.dorsen-card-link {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #7ecbf5;
+}
+
+/* Why Dorsen Section */
+.dorsen-section {
+  margin-bottom: 160px;
+}
+
+.dorsen-section-title {
+  font-size: 44px;
+  line-height: 1.15;
+  letter-spacing: -0.88px;
+  font-weight: 600;
+  color: #f0f4f8;
+  margin: 0 0 40px 0;
+}
+
+.dorsen-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.dorsen-feature-card {
+  padding: 32px 28px;
+  border-radius: 20px;
+  background: linear-gradient(160deg, rgba(20,28,40,0.9) 0%, rgba(15,22,32,0.95) 100%);
+  border: 1px solid rgba(64,155,211,0.1);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.dorsen-feature-card:hover {
+  border-color: rgba(64,155,211,0.3);
+  transform: translateY(-2px);
+}
+
+.dorsen-feature-icon {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.dorsen-feature-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f0f4f8;
+  margin-bottom: 8px;
+}
+
+.dorsen-feature-desc {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #8b9ab3;
+}
+
+/* Updates Section */
+.dorsen-updates-section {
+  margin-bottom: 120px;
+  margin-top: 80px;
+}
+
+.dorsen-update-item {
+  display: block;
+  padding: 28px 0;
+  text-decoration: none;
+  border-top: 1px solid rgba(64,155,211,0.1);
+  border-bottom: 1px solid rgba(64,155,211,0.1);
+  transition: opacity 0.2s ease;
+}
+
+.dorsen-update-item:hover {
+  opacity: 0.9;
+}
+
+.dorsen-update-item-next {
+  border-top: none;
+}
+
+.dorsen-update-title {
+  font-size: 22px;
+  line-height: 1.35;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+  color: #f0f4f8;
+}
+
+.dorsen-update-desc {
+  margin: 8px 0 0;
+  max-width: 800px;
+  font-size: 15px;
+  line-height: 1.55;
+  font-weight: 400;
+  color: #8b9ab3;
+}
+
+.dorsen-update-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  background: rgba(64,155,211,0.1);
+  color: #7ecbf5;
+}
+
+/* Footer */
+.dorsen-footer-wrap {
+  padding: 0;
+}
+
+.dorsen-footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.dorsen-footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 16px 40px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #8b9ab3;
+}
+
+.dorsen-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+}
+
+.dorsen-footer-link {
+  color: #d0d8e4;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.dorsen-footer-link:hover {
+  color: #7ecbf5;
+}
+
+/* ──────────────────────────────────────────────────
+   Responsive Breakpoints
+   ────────────────────────────────────────────────── */
+
+/* Tablet & Intermediate (< 1024px) */
+@media (max-width: 1024px) {
+  .dorsen-page-container {
+    padding: 48px 36px 0 !important;
+  }
+  .dorsen-hero {
+    margin-bottom: 64px !important;
+  }
+  .dorsen-hero-title {
+    font-size: 48px !important;
+    letter-spacing: -1.2px !important;
+  }
+  .dorsen-hero-desc {
+    font-size: 19px !important;
+  }
+  .dorsen-card-grid {
+    column-gap: 36px !important;
+    row-gap: 48px !important;
+    margin-bottom: 96px !important;
+  }
+  .dorsen-feature-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
+  .dorsen-section {
+    margin-bottom: 96px !important;
+  }
+  .dorsen-section-title {
+    font-size: 36px !important;
+    margin-bottom: 28px !important;
+  }
+  .dorsen-footer {
+    padding: 0 36px 48px !important;
+  }
+}
+
+/* Mobile Screens (< 768px) */
+@media (max-width: 768px) {
+  .dorsen-page-container {
+    padding: 28px 18px 0 !important;
+  }
+  .dorsen-hero {
+    margin-bottom: 44px !important;
+  }
+  .dorsen-hero-badge {
+    font-size: 12px !important;
+    padding: 5px 12px 5px 8px !important;
+    margin-bottom: 16px !important;
+  }
+  .dorsen-hero-title {
+    font-size: 34px !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.6px !important;
+  }
+  .dorsen-hero-desc {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    margin-top: 14px !important;
+  }
+  
+  /* Stack 2-col product cards to 1 column */
+  .dorsen-card-grid {
+    grid-template-columns: 1fr !important;
+    row-gap: 24px !important;
+    margin-bottom: 60px !important;
+  }
+  .dorsen-card {
+    gap: 16px !important;
+    padding: 12px !important;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(64,155,211,0.08);
+  }
+  .dorsen-card-icon {
+    width: 68px !important;
+    height: 72px !important;
+    border-radius: 16px !important;
+    font-size: 28px !important;
+  }
+  .dorsen-card-title {
+    font-size: 20px !important;
+  }
+  .dorsen-card-desc {
+    font-size: 13.5px !important;
+    max-width: 100% !important;
+    margin-top: 6px !important;
+  }
+  .dorsen-card-link {
+    margin-top: 8px !important;
+  }
+
+  /* Stack 3-col feature cards to 1 column */
+  .dorsen-feature-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+  .dorsen-feature-card {
+    padding: 22px 18px !important;
+    border-radius: 16px !important;
+  }
+  .dorsen-feature-icon {
+    font-size: 24px !important;
+    margin-bottom: 12px !important;
+  }
+  .dorsen-feature-title {
+    font-size: 17px !important;
+    margin-bottom: 6px !important;
+  }
+  .dorsen-feature-desc {
+    font-size: 13.5px !important;
+  }
+  .dorsen-section {
+    margin-bottom: 60px !important;
+  }
+  .dorsen-section-title {
+    font-size: 26px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Updates */
+  .dorsen-updates-section {
+    margin-top: 48px !important;
+    margin-bottom: 60px !important;
+  }
+  .dorsen-update-item {
+    padding: 18px 0 !important;
+  }
+  .dorsen-update-title {
+    font-size: 17px !important;
+    line-height: 1.3 !important;
+  }
+  .dorsen-update-desc {
+    font-size: 13.5px !important;
+    margin-top: 6px !important;
+  }
+
+  /* Footer */
+  .dorsen-footer {
+    padding: 0 18px 36px !important;
+    gap: 28px !important;
+  }
+  .dorsen-footer-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 14px !important;
+  }
+  .dorsen-footer-links {
+    gap: 10px 18px !important;
+  }
+}
+
+/* Extra Small Mobile (< 380px) */
+@media (max-width: 380px) {
+  .dorsen-page-container {
+    padding: 20px 14px 0 !important;
+  }
+  .dorsen-hero-title {
+    font-size: 28px !important;
+  }
+  .dorsen-card {
+    gap: 12px !important;
+    padding: 10px !important;
+  }
+  .dorsen-card-icon {
+    width: 58px !important;
+    height: 62px !important;
+    font-size: 24px !important;
+  }
+  .dorsen-card-title {
+    font-size: 18px !important;
+  }
+  .dorsen-section-title {
+    font-size: 23px !important;
+  }
+  .dorsen-footer {
+    padding: 0 14px 30px !important;
+  }
+}
