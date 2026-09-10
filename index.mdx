@@ -5,472 +5,132 @@ description: "Build scalable DeFi applications, deploy smart contracts, and inte
 mode: "custom"
 ---
 
-<div className="dorsen-page-container" style={{ maxWidth: "1440px", margin: "0 auto", padding: "60px 80px 0", width: "100%", boxSizing: "border-box" }}>
+<div className="dorsen-page-container">
 
   {/* ─── Hero ─── */}
-  <div className="dorsen-hero" style={{ marginBottom: "100px" }}>
-    <div className="dorsen-hero-badge" style={{
-      display: "inline-flex",
-      alignItems: "center",
-      gap: "8px",
-      padding: "6px 14px 6px 10px",
-      borderRadius: "999px",
-      fontSize: "13px",
-      fontWeight: "500",
-      letterSpacing: "0.2px",
-      marginBottom: "24px",
-      background: "linear-gradient(135deg, rgba(44,135,191,0.12) 0%, rgba(64,155,211,0.08) 100%)",
-      border: "1px solid rgba(64,155,211,0.25)",
-      color: "#7ecbf5"
-    }}>
-      <span style={{
-        width: "6px",
-        height: "6px",
-        borderRadius: "50%",
-        background: "#7ecbf5",
-        display: "inline-block"
-      }}></span>
+  <div className="dorsen-hero">
+    <div className="dorsen-hero-badge">
+      <span className="dorsen-hero-badge-dot"></span>
       Dorsen Chain is live on Mainnet
     </div>
 
-    <h1 className="dorsen-hero-title" style={{
-      fontSize: "64px",
-      lineHeight: "1.08",
-      letterSpacing: "-1.6px",
-      fontWeight: "600",
-      margin: "0",
-      background: "linear-gradient(135deg, #e0f0ff 0%, #409BD3 40%, #7ecbf5 100%)",
-      WebkitBackgroundClip: "text",
-      WebkitTextFillColor: "transparent",
-      backgroundClip: "text"
-    }}>Dorsen Developer Docs</h1>
+    <h1 className="dorsen-hero-title">Dorsen Developer Docs</h1>
 
-    <div className="dorsen-hero-desc" style={{
-      marginTop: "20px",
-      maxWidth: "620px",
-      fontSize: "22px",
-      lineHeight: "1.45",
-      letterSpacing: "-0.2px",
-      fontWeight: "400",
-      color: "#9ba8b9"
-    }}>
+    <div className="dorsen-hero-desc">
       Build scalable DeFi applications, deploy smart contracts, and integrate with Dorsen Chain — the high-performance data-oriented blockchain.
     </div>
   </div>
 
   {/* ─── Product Cards ─── */}
-  <div className="dorsen-card-grid" style={{
-    display: "grid",
-    gridTemplateColumns: "repeat(2, 1fr)",
-    columnGap: "64px",
-    rowGap: "80px",
-    marginBottom: "160px"
-  }}>
+  <div className="dorsen-card-grid">
 
-    <a href="/dorsen-chain" className="dorsen-card" style={{
-      display: "flex",
-      alignItems: "flex-start",
-      gap: "24px",
-      textDecoration: "none",
-      padding: "12px",
-      borderRadius: "20px",
-      transition: "background-color 0.2s ease"
-    }}>
-      <div className="dorsen-card-icon" style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        width: "100px",
-        height: "106px",
-        borderRadius: "22px",
-        flexShrink: "0",
-        background: "linear-gradient(145deg, rgba(44,135,191,0.12) 0%, rgba(30,40,55,0.8) 100%)",
-        border: "1px solid rgba(64,155,211,0.15)",
-        fontSize: "36px"
-      }}>⛓️</div>
+    <a href="/dorsen-chain" className="dorsen-card">
+      <div className="dorsen-card-icon">⛓️</div>
       <div>
-        <div className="dorsen-card-title" style={{
-          fontSize: "28px",
-          lineHeight: "1.2",
-          letterSpacing: "-0.3px",
-          fontWeight: "600",
-          color: "#f0f4f8"
-        }}>Dorsen Chain</div>
-        <div className="dorsen-card-desc" style={{
-          fontSize: "15px",
-          lineHeight: "1.5",
-          fontWeight: "400",
-          marginTop: "8px",
-          maxWidth: "320px",
-          color: "#8b9ab3"
-        }}>High-performance data-oriented blockchain with ultra-low gas fees and fast finality</div>
-        <div className="dorsen-card-link" style={{
-          marginTop: "12px",
-          fontSize: "14px",
-          fontWeight: "500",
-          color: "#7ecbf5"
-        }}>Learn more →</div>
+        <div className="dorsen-card-title">Dorsen Chain</div>
+        <div className="dorsen-card-desc">High-performance data-oriented blockchain with ultra-low gas fees and fast finality</div>
+        <div className="dorsen-card-link">Learn more →</div>
       </div>
     </a>
 
-    <a href="/dorsen-chain" className="dorsen-card" style={{
-      display: "flex",
-      alignItems: "flex-start",
-      gap: "24px",
-      textDecoration: "none",
-      padding: "12px",
-      borderRadius: "20px"
-    }}>
-      <div className="dorsen-card-icon" style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        width: "100px",
-        height: "106px",
-        borderRadius: "22px",
-        flexShrink: "0",
-        background: "linear-gradient(145deg, rgba(64,155,211,0.12) 0%, rgba(30,40,55,0.8) 100%)",
-        border: "1px solid rgba(64,155,211,0.15)",
-        fontSize: "36px"
-      }}>📜</div>
+    <a href="/dorsen-chain" className="dorsen-card">
+      <div className="dorsen-card-icon dorsen-card-icon-blue">📜</div>
       <div>
-        <div className="dorsen-card-title" style={{
-          fontSize: "28px",
-          lineHeight: "1.2",
-          letterSpacing: "-0.3px",
-          fontWeight: "600",
-          color: "#f0f4f8"
-        }}>Smart Contracts</div>
-        <div className="dorsen-card-desc" style={{
-          fontSize: "15px",
-          lineHeight: "1.5",
-          fontWeight: "400",
-          marginTop: "8px",
-          maxWidth: "320px",
-          color: "#8b9ab3"
-        }}>Deploy and interact with Solidity contracts on a fully EVM-equivalent chain</div>
-        <div className="dorsen-card-link" style={{
-          marginTop: "12px",
-          fontSize: "14px",
-          fontWeight: "500",
-          color: "#7ecbf5"
-        }}>Get started →</div>
+        <div className="dorsen-card-title">Smart Contracts</div>
+        <div className="dorsen-card-desc">Deploy and interact with Solidity contracts on a fully EVM-equivalent chain</div>
+        <div className="dorsen-card-link">Get started →</div>
       </div>
     </a>
 
-    <a href="/dorsen-chain" className="dorsen-card" style={{
-      display: "flex",
-      alignItems: "flex-start",
-      gap: "24px",
-      textDecoration: "none",
-      padding: "12px",
-      borderRadius: "20px"
-    }}>
-      <div className="dorsen-card-icon" style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        width: "100px",
-        height: "106px",
-        borderRadius: "22px",
-        flexShrink: "0",
-        background: "linear-gradient(145deg, rgba(44,135,191,0.12) 0%, rgba(30,40,55,0.8) 100%)",
-        border: "1px solid rgba(64,155,211,0.15)",
-        fontSize: "36px"
-      }}>🏦</div>
+    <a href="/dorsen-chain" className="dorsen-card">
+      <div className="dorsen-card-icon">🏦</div>
       <div>
-        <div className="dorsen-card-title" style={{
-          fontSize: "28px",
-          lineHeight: "1.2",
-          letterSpacing: "-0.3px",
-          fontWeight: "600",
-          color: "#f0f4f8"
-        }}>DeFi on Dorsen</div>
-        <div className="dorsen-card-desc" style={{
-          fontSize: "15px",
-          lineHeight: "1.5",
-          fontWeight: "400",
-          marginTop: "8px",
-          maxWidth: "320px",
-          color: "#8b9ab3"
-        }}>Build decentralized finance applications with lower costs and higher throughput</div>
-        <div className="dorsen-card-link" style={{
-          marginTop: "12px",
-          fontSize: "14px",
-          fontWeight: "500",
-          color: "#7ecbf5"
-        }}>Explore →</div>
+        <div className="dorsen-card-title">DeFi on Dorsen</div>
+        <div className="dorsen-card-desc">Build decentralized finance applications with lower costs and higher throughput</div>
+        <div className="dorsen-card-link">Explore →</div>
       </div>
     </a>
 
-    <a href="/dorsen-chain" className="dorsen-card" style={{
-      display: "flex",
-      alignItems: "flex-start",
-      gap: "24px",
-      textDecoration: "none",
-      padding: "12px",
-      borderRadius: "20px"
-    }}>
-      <div className="dorsen-card-icon" style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        width: "100px",
-        height: "106px",
-        borderRadius: "22px",
-        flexShrink: "0",
-        background: "linear-gradient(145deg, rgba(64,155,211,0.12) 0%, rgba(30,40,55,0.8) 100%)",
-        border: "1px solid rgba(64,155,211,0.15)",
-        fontSize: "36px"
-      }}>🔗</div>
+    <a href="/dorsen-chain" className="dorsen-card">
+      <div className="dorsen-card-icon dorsen-card-icon-blue">🔗</div>
       <div>
-        <div className="dorsen-card-title" style={{
-          fontSize: "28px",
-          lineHeight: "1.2",
-          letterSpacing: "-0.3px",
-          fontWeight: "600",
-          color: "#f0f4f8"
-        }}>Bridge & Interop</div>
-        <div className="dorsen-card-desc" style={{
-          fontSize: "15px",
-          lineHeight: "1.5",
-          fontWeight: "400",
-          marginTop: "8px",
-          maxWidth: "320px",
-          color: "#8b9ab3"
-        }}>Move assets seamlessly between Dorsen Chain and other EVM-compatible networks</div>
-        <div className="dorsen-card-link" style={{
-          marginTop: "12px",
-          fontSize: "14px",
-          fontWeight: "500",
-          color: "#7ecbf5"
-        }}>Discover →</div>
+        <div className="dorsen-card-title">Bridge &amp; Interop</div>
+        <div className="dorsen-card-desc">Move assets seamlessly between Dorsen Chain and other EVM-compatible networks</div>
+        <div className="dorsen-card-link">Discover →</div>
       </div>
     </a>
 
   </div>
 
   {/* ─── Why Dorsen ─── */}
-  <div className="dorsen-section" style={{ marginBottom: "160px" }}>
-    <h2 className="dorsen-section-title" style={{
-      fontSize: "44px",
-      lineHeight: "1.15",
-      letterSpacing: "-0.88px",
-      fontWeight: "600",
-      color: "#f0f4f8",
-      margin: "0 0 40px 0"
-    }}>Why build on Dorsen?</h2>
+  <div className="dorsen-section">
+    <h2 className="dorsen-section-title">Why build on Dorsen?</h2>
 
-    <div className="dorsen-feature-grid" style={{
-      display: "grid",
-      gridTemplateColumns: "repeat(3, 1fr)",
-      gap: "24px"
-    }}>
+    <div className="dorsen-feature-grid">
 
-      <div className="dorsen-feature-card" style={{
-        padding: "32px 28px",
-        borderRadius: "20px",
-        background: "linear-gradient(160deg, rgba(20,28,40,0.9) 0%, rgba(15,22,32,0.95) 100%)",
-        border: "1px solid rgba(64,155,211,0.1)"
-      }}>
-        <div className="dorsen-feature-icon" style={{ fontSize: "28px", marginBottom: "16px" }}>⚡</div>
-        <div className="dorsen-feature-title" style={{ fontSize: "18px", fontWeight: "600", color: "#f0f4f8", marginBottom: "8px" }}>Ultra-Low Gas Fees</div>
-        <div className="dorsen-feature-desc" style={{ fontSize: "14px", lineHeight: "1.55", color: "#8b9ab3" }}>Transaction costs dramatically lower than other EVM chains, making DeFi accessible to everyone.</div>
+      <div className="dorsen-feature-card">
+        <div className="dorsen-feature-icon">⚡</div>
+        <div className="dorsen-feature-title">Ultra-Low Gas Fees</div>
+        <div className="dorsen-feature-desc">Transaction costs dramatically lower than other EVM chains, making DeFi accessible to everyone.</div>
       </div>
 
-      <div className="dorsen-feature-card" style={{
-        padding: "32px 28px",
-        borderRadius: "20px",
-        background: "linear-gradient(160deg, rgba(20,28,40,0.9) 0%, rgba(15,22,32,0.95) 100%)",
-        border: "1px solid rgba(64,155,211,0.1)"
-      }}>
-        <div className="dorsen-feature-icon" style={{ fontSize: "28px", marginBottom: "16px" }}>🚀</div>
-        <div className="dorsen-feature-title" style={{ fontSize: "18px", fontWeight: "600", color: "#f0f4f8", marginBottom: "8px" }}>Blazing Fast</div>
-        <div className="dorsen-feature-desc" style={{ fontSize: "14px", lineHeight: "1.55", color: "#8b9ab3" }}>Sub-second finality and high throughput for real-time application experiences.</div>
+      <div className="dorsen-feature-card">
+        <div className="dorsen-feature-icon">🚀</div>
+        <div className="dorsen-feature-title">Blazing Fast</div>
+        <div className="dorsen-feature-desc">Sub-second finality and high throughput for real-time application experiences.</div>
       </div>
 
-      <div className="dorsen-feature-card" style={{
-        padding: "32px 28px",
-        borderRadius: "20px",
-        background: "linear-gradient(160deg, rgba(20,28,40,0.9) 0%, rgba(15,22,32,0.95) 100%)",
-        border: "1px solid rgba(64,155,211,0.1)"
-      }}>
-        <div className="dorsen-feature-icon" style={{ fontSize: "28px", marginBottom: "16px" }}>🛡️</div>
-        <div className="dorsen-feature-title" style={{ fontSize: "18px", fontWeight: "600", color: "#f0f4f8", marginBottom: "8px" }}>EVM Equivalent</div>
-        <div className="dorsen-feature-desc" style={{ fontSize: "14px", lineHeight: "1.55", color: "#8b9ab3" }}>Full compatibility with existing Ethereum tooling, libraries, and smart contracts.</div>
+      <div className="dorsen-feature-card">
+        <div className="dorsen-feature-icon">🛡️</div>
+        <div className="dorsen-feature-title">EVM Equivalent</div>
+        <div className="dorsen-feature-desc">Full compatibility with existing Ethereum tooling, libraries, and smart contracts.</div>
       </div>
 
     </div>
   </div>
 
   {/* ─── Divider ─── */}
-  <hr style={{
-    height: "1px",
-    background: "linear-gradient(90deg, transparent 0%, rgba(64,155,211,0.12) 50%, transparent 100%)",
-    margin: "0",
-    border: "none"
-  }} />
+  <hr className="dorsen-divider" />
 
   {/* ─── Tech Updates ─── */}
-  <div className="dorsen-updates-section" style={{ marginBottom: "120px", marginTop: "80px" }}>
-    <h2 className="dorsen-section-title" style={{
-      fontSize: "44px",
-      lineHeight: "1.15",
-      letterSpacing: "-0.88px",
-      fontWeight: "600",
-      color: "#f0f4f8",
-      margin: "0 0 40px 0"
-    }}>Dorsen Tech Updates</h2>
+  <div className="dorsen-updates-section">
+    <h2 className="dorsen-section-title">Dorsen Tech Updates</h2>
 
     <div>
-      <a href="https://dorsen.org" target="_blank" rel="noopener noreferrer" className="dorsen-update-item" style={{
-        display: "block",
-        padding: "28px 0",
-        textDecoration: "none",
-        borderTop: "1px solid rgba(64,155,211,0.1)",
-        borderBottom: "1px solid rgba(64,155,211,0.1)"
-      }}>
-        <div className="dorsen-update-title" style={{
-          fontSize: "22px",
-          lineHeight: "1.35",
-          letterSpacing: "-0.2px",
-          fontWeight: "500",
-          color: "#f0f4f8"
-        }}>Dorsen Chain Mainnet is live</div>
-        <p className="dorsen-update-desc" style={{
-          margin: "8px 0 0",
-          maxWidth: "800px",
-          fontSize: "15px",
-          lineHeight: "1.55",
-          fontWeight: "400",
-          color: "#8b9ab3"
-        }}>Dorsen Chain is now live on mainnet with full EVM equivalence, ultra-low gas fees, and fast transactions. Start building scalable decentralized applications today.</p>
-        <span className="dorsen-update-badge" style={{
-          display: "inline-block",
-          padding: "3px 10px",
-          borderRadius: "6px",
-          fontSize: "11px",
-          fontWeight: "600",
-          letterSpacing: "0.3px",
-          textTransform: "uppercase",
-          marginTop: "10px",
-          background: "rgba(64,155,211,0.1)",
-          color: "#7ecbf5"
-        }}>Mainnet</span>
+      <a href="https://dorsen.org" target="_blank" rel="noopener noreferrer" className="dorsen-update-item">
+        <div className="dorsen-update-title">Dorsen Chain Mainnet is live</div>
+        <p className="dorsen-update-desc">Dorsen Chain is now live on mainnet with full EVM equivalence, ultra-low gas fees, and fast transactions. Start building scalable decentralized applications today.</p>
+        <span className="dorsen-update-badge">Mainnet</span>
       </a>
 
-      <a href="https://dorsen.org" target="_blank" rel="noopener noreferrer" className="dorsen-update-item dorsen-update-item-next" style={{
-        display: "block",
-        padding: "28px 0",
-        textDecoration: "none",
-        borderBottom: "1px solid rgba(64,155,211,0.1)"
-      }}>
-        <div className="dorsen-update-title" style={{
-          fontSize: "22px",
-          lineHeight: "1.35",
-          letterSpacing: "-0.2px",
-          fontWeight: "500",
-          color: "#f0f4f8"
-        }}>Open source infrastructure and standards</div>
-        <p className="dorsen-update-desc" style={{
-          margin: "8px 0 0",
-          maxWidth: "800px",
-          fontSize: "15px",
-          lineHeight: "1.55",
-          fontWeight: "400",
-          color: "#8b9ab3"
-        }}>Dorsen Chain is built on open source standards and infrastructure, enabling transparency and community-driven development across the ecosystem.</p>
-        <span className="dorsen-update-badge" style={{
-          display: "inline-block",
-          padding: "3px 10px",
-          borderRadius: "6px",
-          fontSize: "11px",
-          fontWeight: "600",
-          letterSpacing: "0.3px",
-          textTransform: "uppercase",
-          marginTop: "10px",
-          background: "rgba(64,155,211,0.1)",
-          color: "#7ecbf5"
-        }}>Open Source</span>
+      <a href="https://dorsen.org" target="_blank" rel="noopener noreferrer" className="dorsen-update-item dorsen-update-item-next">
+        <div className="dorsen-update-title">Open source infrastructure and standards</div>
+        <p className="dorsen-update-desc">Dorsen Chain is built on open source standards and infrastructure, enabling transparency and community-driven development across the ecosystem.</p>
+        <span className="dorsen-update-badge">Open Source</span>
       </a>
 
-      <a href="https://dorsen.org" target="_blank" rel="noopener noreferrer" className="dorsen-update-item dorsen-update-item-next" style={{
-        display: "block",
-        padding: "28px 0",
-        textDecoration: "none",
-        borderBottom: "1px solid rgba(64,155,211,0.1)"
-      }}>
-        <div className="dorsen-update-title" style={{
-          fontSize: "22px",
-          lineHeight: "1.35",
-          letterSpacing: "-0.2px",
-          fontWeight: "500",
-          color: "#f0f4f8"
-        }}>Developer tooling and SDK support</div>
-        <p className="dorsen-update-desc" style={{
-          margin: "8px 0 0",
-          maxWidth: "800px",
-          fontSize: "15px",
-          lineHeight: "1.55",
-          fontWeight: "400",
-          color: "#8b9ab3"
-        }}>Full support for popular development frameworks including Hardhat, Foundry, and ethers.js. Deploy your first contract in minutes with our quickstart guides.</p>
-        <span className="dorsen-update-badge" style={{
-          display: "inline-block",
-          padding: "3px 10px",
-          borderRadius: "6px",
-          fontSize: "11px",
-          fontWeight: "600",
-          letterSpacing: "0.3px",
-          textTransform: "uppercase",
-          marginTop: "10px",
-          background: "rgba(64,155,211,0.1)",
-          color: "#7ecbf5"
-        }}>Developer Tools</span>
+      <a href="https://dorsen.org" target="_blank" rel="noopener noreferrer" className="dorsen-update-item dorsen-update-item-next">
+        <div className="dorsen-update-title">Developer tooling and SDK support</div>
+        <p className="dorsen-update-desc">Full support for popular development frameworks including Hardhat, Foundry, and ethers.js. Deploy your first contract in minutes with our quickstart guides.</p>
+        <span className="dorsen-update-badge">Developer Tools</span>
       </a>
     </div>
 
-    <a href="https://dorsen.org" target="_blank" rel="noopener noreferrer" style={{
-      display: "inline-flex",
-      alignItems: "center",
-      gap: "6px",
-      fontSize: "15px",
-      fontWeight: "500",
-      textDecoration: "none",
-      color: "#7ecbf5",
-      marginTop: "32px"
-    }}>Go to Dorsen blog →</a>
+    <a href="https://dorsen.org" target="_blank" rel="noopener noreferrer" className="dorsen-update-more-link">Go to Dorsen blog →</a>
   </div>
 
 </div>
 
 {/* ─── Footer ─── */}
-<div className="dorsen-footer-wrap" style={{ padding: "0" }}>
-  <div className="dorsen-footer" style={{
-    maxWidth: "1440px",
-    margin: "0 auto",
-    padding: "0 80px 56px",
-    display: "flex",
-    flexDirection: "column",
-    gap: "48px"
-  }}>
-    <div className="dorsen-footer-row" style={{
-      display: "flex",
-      justifyContent: "space-between",
-      alignItems: "baseline",
-      flexWrap: "wrap",
-      gap: "16px 40px",
-      fontSize: "14px",
-      lineHeight: "1.4",
-      fontWeight: "400",
-      color: "#8b9ab3"
-    }}>
+<div className="dorsen-footer-wrap">
+  <div className="dorsen-footer">
+    <div className="dorsen-footer-row">
       <span>© 2026 Dorsen Labs</span>
-      <div className="dorsen-footer-links" style={{ display: "flex", flexWrap: "wrap", gap: "12px 32px" }}>
-        <a href="https://dorsen.org" className="dorsen-footer-link" style={{ color: "#d0d8e4", textDecoration: "none" }}>About Dorsen</a>
-        <a href="https://github.com/dorsen-labs" className="dorsen-footer-link" style={{ color: "#d0d8e4", textDecoration: "none" }}>GitHub</a>
-        <a href="https://t.me/dorsenlabs" className="dorsen-footer-link" style={{ color: "#d0d8e4", textDecoration: "none" }}>Telegram</a>
-        <a href="https://x.com/dorsenofficial" className="dorsen-footer-link" style={{ color: "#d0d8e4", textDecoration: "none" }}>X (Twitter)</a>
+      <div className="dorsen-footer-links">
+        <a href="https://dorsen.org" target="_blank" rel="noopener noreferrer" className="dorsen-footer-link">About Dorsen</a>
+        <a href="https://github.com/dorsen-labs" target="_blank" rel="noopener noreferrer" className="dorsen-footer-link">GitHub</a>
+        <a href="https://t.me/dorsenlabs" target="_blank" rel="noopener noreferrer" className="dorsen-footer-link">Telegram</a>
+        <a href="https://x.com/dorsenofficial" target="_blank" rel="noopener noreferrer" className="dorsen-footer-link">X (Twitter)</a>
       </div>
     </div>
   </div>
