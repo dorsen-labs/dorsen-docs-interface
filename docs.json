@@ -8,12 +8,12 @@
     "dark": "#2C87BF"
   },
   "favicon": {
-    "light": "/images/dorsen-icon.jpeg",
-    "dark": "/images/dorsen-icon.jpeg"
+    "light": "/images/dorsen.svg",
+    "dark": "/images/dorsen.svg"
   },
   "logo": {
-    "light": "/images/dorsen-icon.jpeg",
-    "dark": "/images/dorsen-icon.jpeg",
+    "light": "/images/light.svg",
+    "dark": "/images/dark.svg",
     "href": "https://docs.dorsen.org"
   },
   "seo": {
