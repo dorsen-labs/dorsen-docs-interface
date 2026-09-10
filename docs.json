@@ -11,13 +11,61 @@
     "light": "/images/dorsen-icon.jpeg",
     "dark": "/images/dorsen-icon.jpeg"
   },
+  "logo": {
+    "light": "/images/dorsen-icon.jpeg",
+    "dark": "/images/dorsen-icon.jpeg",
+    "href": "https://docs.dorsen.org"
+  },
+  "seo": {
+    "metatags": {
+      "canonical": "https://docs.dorsen.org",
+      "description": "Developer documentation for building with Dorsen Chain.",
+      "og:title": "Dorsen Developer Docs",
+      "og:description": "Build with Dorsen Chain.",
+      "og:image": "https://raw.githubusercontent.com/dorsen-labs/dorsen-docs-interface/main/images/docs/docs-meta.jpeg",
+      "og:image:type": "image/jpeg",
+      "og:type": "website",
+      "og:site_name": "Dorsen Documentation",
+      "og:locale": "en_US",
+      "twitter:card": "summary_large_image",
+      "twitter:image": "https://raw.githubusercontent.com/dorsen-labs/dorsen-docs-interface/main/images/docs/docs-meta.jpeg",
+      "twitter:site": "@dorsenofficial",
+      "theme-color": "#000000",
+      "referrer": "origin-when-cross-origin"
+    },
+    "indexing": "all"
+  },
   "navigation": {
-    "pages": [
+        "tabs": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
+        "tab": "Home",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["index"]
+          }
+        ]
+      },
+      {
+        "tab": "Dorsen Chain",
+        "groups": [
+          {
+            "group": "About Dorsen Chain",
+            "pages": [
+              "dorsen-chain/index"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelogs",
+        "groups": [
+          {
+            "group": "Changelogs",
+            "pages": [
+              "changelogs/index"
+            ]
+          }
         ]
       }
     ],
@@ -27,41 +75,27 @@
           "anchor": "Telegram Support Channel",
           "icon": "telegram",
           "href": "https://t.me/dorsenlabs"
+        },
+        {
+          "anchor": "GitHub",
+          "href": "https://github.com/dorsen-labs",
+          "icon": "github"
         }
       ]
-    },
-    "tabs": [
-      {
-        "tab": "Home",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      },
-      {
-        "tab": "Dorsen Chain"
-      },
-      {
-        "tab": "Changelogs"
-      }
-    ]
-  },
-  "logo": {
-    "light": "/images/dorsen-icon.jpeg",
-    "dark": "/images/dorsen-icon.jpeg",
-    "href": "https://docs.dorsen.org"
+    }
   },
   "navbar": {
     "links": [
       {
         "href": "https://t.me/dorsenlabs",
-        "label": "Get help"
+        "label": "Get help",
+        "icon": "discord"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Explore",
+      "href": "https://dorsen.org"
     }
   },
   "contextual": {
@@ -78,9 +112,12 @@
   },
   "footer": {
     "socials": {
+      "telegram": "https://t.me/dorsenlabs",
       "x": "https://x.com/dorsenofficial",
       "github": "https://github.com/dorsen-labs",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "facebook": "https://www.facebook.com/dorsenchain",
+      "instagram": "https://www.instagram.com/dorsenlabs",
+      "youtube": "https://www.youtube.com/@dorsenlabs"
     }
   },
   "icons": {
@@ -90,6 +127,9 @@
     "decoration": "windows"
   },
   "styling": {
-    "eyebrows": "section"
+    "codeblocks": "system"
+  },
+  "search": {
+    "prompt": "Search the dorsen developers docs..."
   }
 }
